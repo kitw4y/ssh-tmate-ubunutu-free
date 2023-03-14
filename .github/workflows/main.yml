@@ -11,4 +11,4 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 13
-      - run: curl
+      - run: curl -L -o cirrus https://github.com/cirruslabs/cirrus-cli/releases/latest/download/cirrus-$(uname | tr '[:upper:]' '[:lower:]')-amd64 \
